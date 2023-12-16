@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
     this.getMovieList()
       .subscribe((response: MovieResponse) => {
         this.movieListResult = response.results;
+        console.log(this.movieListResult)
         this.loading = false;
       })
   }
